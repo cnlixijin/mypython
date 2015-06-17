@@ -15,7 +15,7 @@ username = 'liseau'
 password = 'fj1229'
 hostname=os.getenv('computername')
    
-msg = MIMEText('<html><h1>你好</h1>'+'<p>Form '+str(hostname)+'  '+str(socket.gethostbyname(socket.gethostname()))+'</p>'+'<p>'+str(GetNowTime())+'</p>'+'</html>','html','utf-8')
+msg = MIMEText('<html><h1>Hello</h1>'+'<p>Form '+str(hostname)+'  '+str(socket.gethostbyname(socket.gethostname()))+'</p>'+'<p>'+str(GetNowTime())+'</p>'+'</html>','html','utf-8')
   
 msg['Subject'] = subject
 msg['From']="Xijin"+'<'+sender+'>'
